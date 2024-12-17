@@ -1,0 +1,187 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.amanuel_glass"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->D:\amanuel_glass\android\app\src\debug\AndroidManifest.xml:6:5-66
+15-->D:\amanuel_glass\android\app\src\debug\AndroidManifest.xml:6:22-64
+16    <!--
+17     Required to query activities that can process text, see:
+18         https://developer.android.com/training/package-visibility and
+19         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+20
+21         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+22    -->
+23    <queries>
+23-->D:\amanuel_glass\android\app\src\main\AndroidManifest.xml:44:5-49:15
+24        <intent>
+24-->D:\amanuel_glass\android\app\src\main\AndroidManifest.xml:45:9-48:18
+25            <action android:name="android.intent.action.PROCESS_TEXT" />
+25-->D:\amanuel_glass\android\app\src\main\AndroidManifest.xml:46:13-72
+25-->D:\amanuel_glass\android\app\src\main\AndroidManifest.xml:46:21-70
+26
+27            <data android:mimeType="text/plain" />
+27-->D:\amanuel_glass\android\app\src\main\AndroidManifest.xml:47:13-50
+27-->D:\amanuel_glass\android\app\src\main\AndroidManifest.xml:47:19-48
+28        </intent>
+29    </queries>
+30
+31    <permission
+31-->[androidx.core:core:1.13.0] C:\Users\win\.gradle\caches\transforms-3\79eb4cec679212dd9a42d61393c3a2b6\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+32        android:name="com.example.amanuel_glass.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+32-->[androidx.core:core:1.13.0] C:\Users\win\.gradle\caches\transforms-3\79eb4cec679212dd9a42d61393c3a2b6\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+33        android:protectionLevel="signature" />
+33-->[androidx.core:core:1.13.0] C:\Users\win\.gradle\caches\transforms-3\79eb4cec679212dd9a42d61393c3a2b6\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+34
+35    <uses-permission android:name="com.example.amanuel_glass.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+35-->[androidx.core:core:1.13.0] C:\Users\win\.gradle\caches\transforms-3\79eb4cec679212dd9a42d61393c3a2b6\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+35-->[androidx.core:core:1.13.0] C:\Users\win\.gradle\caches\transforms-3\79eb4cec679212dd9a42d61393c3a2b6\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+36
+37    <application
+38        android:name="android.app.Application"
+39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+39-->[androidx.core:core:1.13.0] C:\Users\win\.gradle\caches\transforms-3\79eb4cec679212dd9a42d61393c3a2b6\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+40        android:debuggable="true"
+41        android:enableOnBackInvokedCallback="true"
+42        android:icon="@mipmap/ic_launcher"
+43        android:label="amanuel_glass" >
+44        <activity
+45            android:name="com.example.amanuel_glass.MainActivity"
+46            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+47            android:exported="true"
+48            android:hardwareAccelerated="true"
+49            android:launchMode="singleTop"
+50            android:taskAffinity=""
+51            android:theme="@style/LaunchTheme"
+52            android:windowSoftInputMode="adjustResize" >
+53
+54            <!--
+55                 Specifies an Android theme to apply to this Activity as soon as
+56                 the Android process has started. This theme is visible to the user
+57                 while the Flutter UI initializes. After that, this theme continues
+58                 to determine the Window background behind the Flutter UI.
+59            -->
+60            <meta-data
+61                android:name="io.flutter.embedding.android.NormalTheme"
+62                android:resource="@style/NormalTheme" />
+63
+64            <intent-filter>
+65                <action android:name="android.intent.action.MAIN" />
+66
+67                <category android:name="android.intent.category.LAUNCHER" />
+68            </intent-filter>
+69        </activity>
+70        <!--
+71             Don't delete the meta-data below.
+72             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+73        -->
+74        <meta-data
+75            android:name="flutterEmbedding"
+76            android:value="2" />
+77
+78        <service
+78-->[:geolocator_android] C:\Users\win\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.1\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:56
+79            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+79-->[:geolocator_android] C:\Users\win\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.1\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-77
+80            android:enabled="true"
+80-->[:geolocator_android] C:\Users\win\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.1\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-35
+81            android:exported="false"
+81-->[:geolocator_android] C:\Users\win\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.1\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+82            android:foregroundServiceType="location" />
+82-->[:geolocator_android] C:\Users\win\AppData\Local\Pub\Cache\hosted\pub.dev\geolocator_android-4.6.1\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-53
+83
+84        <uses-library
+84-->[androidx.window:window:1.0.0-beta04] C:\Users\win\.gradle\caches\transforms-3\36b1d015d2d0983aa29b0ab7a73f4883\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+85            android:name="androidx.window.extensions"
+85-->[androidx.window:window:1.0.0-beta04] C:\Users\win\.gradle\caches\transforms-3\36b1d015d2d0983aa29b0ab7a73f4883\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+86            android:required="false" />
+86-->[androidx.window:window:1.0.0-beta04] C:\Users\win\.gradle\caches\transforms-3\36b1d015d2d0983aa29b0ab7a73f4883\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+87        <uses-library
+87-->[androidx.window:window:1.0.0-beta04] C:\Users\win\.gradle\caches\transforms-3\36b1d015d2d0983aa29b0ab7a73f4883\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+88            android:name="androidx.window.sidecar"
+88-->[androidx.window:window:1.0.0-beta04] C:\Users\win\.gradle\caches\transforms-3\36b1d015d2d0983aa29b0ab7a73f4883\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+89            android:required="false" />
+89-->[androidx.window:window:1.0.0-beta04] C:\Users\win\.gradle\caches\transforms-3\36b1d015d2d0983aa29b0ab7a73f4883\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+90
+91        <activity
+91-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\win\.gradle\caches\transforms-3\aa0addf370c798b4843c581ee0e72cb0\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:9-22:45
+92            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+92-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\win\.gradle\caches\transforms-3\aa0addf370c798b4843c581ee0e72cb0\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:20:19-85
+93            android:exported="false"
+93-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\win\.gradle\caches\transforms-3\aa0addf370c798b4843c581ee0e72cb0\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:22:19-43
+94            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+94-->[com.google.android.gms:play-services-base:18.3.0] C:\Users\win\.gradle\caches\transforms-3\aa0addf370c798b4843c581ee0e72cb0\transformed\jetified-play-services-base-18.3.0\AndroidManifest.xml:21:19-78
+95
+96        <meta-data
+96-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\win\.gradle\caches\transforms-3\34dd100f4dda4c89a1888175edc46deb\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+97            android:name="com.google.android.gms.version"
+97-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\win\.gradle\caches\transforms-3\34dd100f4dda4c89a1888175edc46deb\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+98            android:value="@integer/google_play_services_version" />
+98-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\win\.gradle\caches\transforms-3\34dd100f4dda4c89a1888175edc46deb\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+99
+100        <provider
+100-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+101            android:name="androidx.startup.InitializationProvider"
+101-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:25:13-67
+102            android:authorities="com.example.amanuel_glass.androidx-startup"
+102-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:26:13-68
+103            android:exported="false" >
+103-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:27:13-37
+104            <meta-data
+104-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+105                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+105-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+106                android:value="androidx.startup" />
+106-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+107        </provider>
+108
+109        <receiver
+109-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+110            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+110-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+111            android:directBootAware="false"
+111-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+112            android:enabled="true"
+112-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+113            android:exported="true"
+113-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+114            android:permission="android.permission.DUMP" >
+114-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+115            <intent-filter>
+115-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+116                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+116-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+117            </intent-filter>
+118            <intent-filter>
+118-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+119                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+119-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+119-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+120            </intent-filter>
+121            <intent-filter>
+121-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+122                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+122-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+122-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+123            </intent-filter>
+124            <intent-filter>
+124-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+125                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+125-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+125-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\win\.gradle\caches\transforms-3\5f3cd10d210343031dea21bdd4a1e3ae\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+126            </intent-filter>
+127        </receiver>
+128    </application>
+129
+130</manifest>
